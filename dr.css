@@ -1,0 +1,9 @@
+.werty{
+    width:400px;
+    height:350px;
+}
+@media(width:991px){
+    .werty{
+        flex-wrap:nowrap;
+    }
+}
