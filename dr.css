@@ -1,16 +1,19 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .rabot{
     position: absolute;
     display:none;
     z-index: 1;
     background-color: #abddfa;
     border-radius: 16px;
+    
 }
 .rabot a:hover {background-color: rgb(240, 204, 204);
 border-radius: 16px ;}
     
     /* Show the dropdown menu on hover */
-    .menu-btn:hover .rabot {display:block;}
+    .menu-btn:hover .rabot {display:block;
+        }
     
    /* Это блок с картинками */
 
@@ -31,14 +34,16 @@ border-radius: 16px ;}
         padding: 12px 16px;
         font-family: 'Poppins', sans-serif;
         color:#1d303b;
+        
 }
 .dert{
-    display:block;
+    display:flex;
     text-decoration: none;
     color:#1d303b;
     font-size: 18px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    
    
    
 }
@@ -58,6 +63,9 @@ border-radius: 16px ;}
     width:auto;
     background-color: #54b9f3;
     height:50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 .news{
     font-family: 'Poppins', sans-serif;
@@ -65,8 +73,71 @@ border-radius: 16px ;}
     font-size: 19px;
     color:rgb(245, 245, 245);
     display:flex;
-    justify-content:center;
+
 }
+.button{
+    text-decoration:none;
+    border-radius:6px;
+    border:1.7px solid #daf1ff;
+    padding:5px 20px ;
+    margin-left:30px;
+    color:#ebf8ff;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.button:hover{
+    background-color: #ebf8ff;
+    color:#54b9f3;
+}
+/*Этот отдел это верхушка сайта*/
+
+.dert:hover:after {
+    transform:rotate(180deg);
+}
+.dert::after{
+    transition:0.13s;
+    content:'';
+    background-image:url(img/seabeatrio.svg) ;
+    clip-path:polygon(0 0, 100% 0, 50% 100%);
+    width: 16px;
+    height: 16px;
+    
+    display:flex;
+    align-self: center;
+}
+svg:hover{
+    fill:red;
+}
+.rabot:hover .dert::after {
+    transform:rotate(180deg);
+}
+.rabot a:hover .dert::after{
+    transform:rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:767px){
     .menu{
         position:relative;
@@ -75,6 +146,8 @@ border-radius: 16px ;}
         margin-right:40px;
     }
 }
+
+
 
 
 
